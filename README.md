@@ -1,6 +1,6 @@
 # Git Stuff
 
-##### Made this just incase i forgor
+##### Just incase i forgor
 
 ## 🔧 Basic Setup
 
@@ -8,8 +8,6 @@
 git init                  # Initialize a new Git repository
 git config --list         # Show current Git configuration
 ```
-
----
 
 ## 📄 Working Directory & Staging
 
@@ -19,8 +17,6 @@ git add <file>            # Stage changes for commit
 git rm <file>             # Remove file and stage the removal
 ```
 
----
-
 ## ✅ Commit History
 
 ```bash
@@ -29,8 +25,6 @@ git log                                      # Show commit history
 git log -- <file>                            # Show commits affecting a specific file
 git log --all --decorate --oneline --graph   # Visualize all branches in one line
 ```
-
----
 
 ## 🌿 Branching & Merging
 
@@ -56,7 +50,7 @@ git merge <branch>        # Merge a branch into current branch
 git rebase <branch>       # Reapply commits on top of another base branch
 ```
 
-### Merge Types
+### Visual Example
 
 **Fast-forward Merge** (no new commits, pointer just moves forward):
 
@@ -87,7 +81,19 @@ A---B---C---M (main)
         Merge commit
 ```
 
----
+**Rebase** (reapplies commits on top of another base, creating a linear history):
+
+```
+Before:
+      D---E (feature)
+     /
+A---B---C (main)
+
+After:
+          D---E (feature)
+         /
+A---B---C (main)
+```
 
 ## 🌐 Remote Repositories
 
