@@ -118,6 +118,6 @@ git merge <remote>/<branch>  # Merge specific remote branch
 ### Pushing Changes
 
 ```bash
-git push                           # Push local commits to remote
-git push origin --delete <branch>  # Delete a remote branch
+git push -u <remote> <branch>        # Push local commits to remote with upstream
+git push <remote> --delete <branch>  # Delete a remote branch
 ```
